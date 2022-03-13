@@ -1,0 +1,7 @@
+<WebRestController.class>
+@RestController : ResponseBody를 모든 메소드에서 적용
+-> under @GetMapping; hello 메소드의 결과는 "HelloWorld"라는 문자열을 JSON 형태로 반환
+
+'@'는 뭘까?
+- Annotation : JEE5부터 새롭게 추가된 문법요소. 자바 코드에 주석처럼 달아 특수한 의미를 부여해 준다.
+
