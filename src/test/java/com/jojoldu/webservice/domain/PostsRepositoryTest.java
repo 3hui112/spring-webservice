@@ -3,7 +3,6 @@ package com.jojoldu.webservice.domain;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -27,13 +26,12 @@ public class PostsRepositoryTest {
     }
 
     @Test
-    public void 게시글저장_불러오기() {
+    public void import_postsSave() {
         postsRepository.save(Posts.builder()
                 .title("테스트 게시글")
                 .content("테스트 본문")
                 .author("jojoldu@gmail.com")
-                .build()
-        );
+                .build());
 
         List<Posts> postsList = postsRepository.findAll();
 
