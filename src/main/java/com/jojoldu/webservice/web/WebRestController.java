@@ -1,7 +1,7 @@
 package com.jojoldu.webservice.web;
 
-import com.jojoldu.webservice.domain.Posts;
 import com.jojoldu.webservice.domain.PostsRepository;
+import com.jojoldu.webservice.dto.posts.PostsSaveRequestDto;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,4 +24,3 @@ public class WebRestController {
         postsRepository.save(dto.toEntity());
     }
 }
-

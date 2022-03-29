@@ -26,7 +26,7 @@ public class PostsRepositoryTest {
     }
 
     @Test
-    public void import_postsSave() {
+    public void 게시글저장_불러오기() {
         postsRepository.save(Posts.builder()
                 .title("테스트 게시글")
                 .content("테스트 본문")

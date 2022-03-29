@@ -1,4 +1,4 @@
-package com.jojoldu.webservice.web;
+package com.jojoldu.webservice.dto.posts;
 
 import com.jojoldu.webservice.domain.Posts;
 import lombok.Getter;
